@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/layout.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,6 +15,9 @@
   </head>
   <body>
     <header>
+      <div class="logo">
+        <a href=""><img src="galleri/Logo3.svg" alt="" /></a>
+      </div>
       <nav class="active">
         <ul class="menu">
           <li><a href="index.html">ABOUT</a></li>
@@ -29,11 +33,11 @@
     </header>
     <main>
       <h1>Vodka Pasta</h1>
-      <section>
-        <div>
-          <img src="galleri/vodkapasta.webp" alt="" />
-        </div>
-        <div>
+      <div>
+        <img src="galleri/vodkapasta.webp" alt="" />
+      </div>
+      <section class="grid_1-2">
+        <div class="ingredients-style">
           <h2>Ingredients</h2>
           <ul>
             <li>300g pasta, fx. Rigatoni or penne</li>
@@ -49,8 +53,8 @@
           </ul>
         </div>
         <div>
-          <h2>Steps</h2>
-          <div class="steps">
+          <div class="ingredients-style">
+            <h2>Steps</h2>
             <ol>
               <li>Boil water in a pot and cook your pasta.</li>
               <li>In a pan cook the onion and garlic with the butter until soft.</li>

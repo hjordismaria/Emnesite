@@ -39,7 +39,7 @@ nav {
 }
 
 .menu li:last-child {
-  margin-right: 0;
+  margin-right: 0px;
 }
 
 .menu a {
@@ -104,11 +104,22 @@ h1 {
   color: rgb(255, 250, 193);
   background-color: black;
   text-align: center;
-  letter-spacing: 30px;
+  letter-spacing: 25px;
 }
-ol li {
-  list-style-type: decimal;
+p {
+  font-family: "Arimo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
+
+.ingredients-style {
+  background-color: #9ecec9;
+  margin: 2em;
+  padding: 2em;
+  justify-items: center;
+}
+
 .recipephotos h2 {
   font-family: "Martian Mono", monospace;
   font-optical-sizing: auto;
@@ -123,7 +134,6 @@ ol li {
   background-color: transparent;
   border: 0;
   max-width: 60%;
-  transform: rotateZ("angle");
 }
 img {
   max-width: 100%;
@@ -137,6 +147,34 @@ img {
   top: 50%;
   left: 70%;
   cursor: pointer;
+}
+.about_side {
+  position: relative;
+}
+.about_side .button {
+  position: absolute;
+  top: 50%;
+  left: 70%;
+  cursor: pointer;
+}
+.about_side-text {
+  position: absolute;
+  top: 0;
+}
+.about_side-text h2 {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 1000;
+  font-style: normal;
+  font-size: 50px;
+  color: #9ecec9;
+  -webkit-text-stroke-color: black;
+  -webkit-text-stroke-width: 2px;
+}
+.about_side img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 @media screen and (width < 800px) {
@@ -180,5 +218,8 @@ img {
 
   nav.active .menu a {
     font-size: 24px;
+  }
+  .grid-1-1 img {
+    height: auto;
   }
 }
